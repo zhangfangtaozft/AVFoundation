@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,17 +22,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBX-Xm-cuR">
-                                <rect key="frame" x="110" y="446" width="175" height="50"/>
+                                <rect key="frame" x="137.5" y="446" width="100" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="KgR-Mc-sYR"/>
+                                    <constraint firstAttribute="width" constant="100" id="ox6-ke-LMi"/>
                                 </constraints>
                                 <connections>
                                     <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jBx-QJ-iqr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fo-7b-oNP">
-                                <rect key="frame" x="16" y="135" width="343" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fo-7b-oNP">
+                                <rect key="frame" x="0.0" y="135" width="375" height="50"/>
                                 <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3RU-g6-SCE"/>
@@ -45,16 +45,15 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yBX-Xm-cuR" secondAttribute="trailing" constant="90" id="1u6-hz-zjr"/>
                             <constraint firstItem="xhV-DX-3hA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2PE-ff-57V"/>
                             <constraint firstItem="yBX-Xm-cuR" firstAttribute="top" secondItem="5fo-7b-oNP" secondAttribute="bottom" constant="261" id="2td-NG-wDc"/>
-                            <constraint firstItem="yBX-Xm-cuR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="5f5-Gl-Kmq"/>
+                            <constraint firstAttribute="trailing" secondItem="5fo-7b-oNP" secondAttribute="trailing" id="3Vi-33-a1T"/>
                             <constraint firstItem="xhV-DX-3hA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5k7-HE-1vm"/>
-                            <constraint firstItem="5fo-7b-oNP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8hN-bU-PKd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5fo-7b-oNP" secondAttribute="trailing" id="J0P-zX-Wbp"/>
                             <constraint firstItem="5fo-7b-oNP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-173.5" id="c26-Sv-AuU"/>
                             <constraint firstAttribute="trailing" secondItem="xhV-DX-3hA" secondAttribute="trailing" id="kzF-wG-HqR"/>
+                            <constraint firstItem="yBX-Xm-cuR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rtj-fR-JMs"/>
                             <constraint firstAttribute="bottom" secondItem="xhV-DX-3hA" secondAttribute="bottom" id="yFN-U7-b4j"/>
+                            <constraint firstItem="5fo-7b-oNP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zGn-zF-b0m"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
