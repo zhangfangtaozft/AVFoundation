@@ -7,29 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E83E43A2050E0D30092B230 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E83E4392050E0D30092B230 /* AppDelegate.m */; };
-		1E83E43D2050E0D30092B230 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E83E43C2050E0D30092B230 /* ViewController.m */; };
-		1E83E4402050E0D30092B230 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E83E43E2050E0D30092B230 /* Main.storyboard */; };
-		1E83E4422050E0D30092B230 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E83E4412050E0D30092B230 /* Assets.xcassets */; };
-		1E83E4452050E0D30092B230 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E83E4432050E0D30092B230 /* LaunchScreen.storyboard */; };
-		1E83E4482050E0D30092B230 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E83E4472050E0D30092B230 /* main.m */; };
+		1E682C602057686800F1C5F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E682C5F2057686800F1C5F2 /* AppDelegate.swift */; };
+		1E682C622057686800F1C5F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E682C612057686800F1C5F2 /* ViewController.swift */; };
+		1E682C652057686800F1C5F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E682C632057686800F1C5F2 /* Main.storyboard */; };
+		1E682C672057686800F1C5F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E682C662057686800F1C5F2 /* Assets.xcassets */; };
+		1E682C6A2057686800F1C5F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E682C682057686800F1C5F2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1E83E4352050E0D30092B230 /* 03-AVFoundation-AudioRecode-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-AVFoundation-AudioRecode-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E83E4382050E0D30092B230 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1E83E4392050E0D30092B230 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1E83E43B2050E0D30092B230 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1E83E43C2050E0D30092B230 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1E83E43F2050E0D30092B230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1E83E4412050E0D30092B230 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1E83E4442050E0D30092B230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1E83E4462050E0D30092B230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E83E4472050E0D30092B230 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1E682C5C2057686800F1C5F2 /* 03-AVFoundation-AudioRecord-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03-AVFoundation-AudioRecord-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E682C5F2057686800F1C5F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E682C612057686800F1C5F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E682C642057686800F1C5F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E682C662057686800F1C5F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E682C692057686800F1C5F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E682C6B2057686800F1C5F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1E83E4322050E0D30092B230 /* Frameworks */ = {
+		1E682C592057686800F1C5F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,74 +35,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E83E42C2050E0D30092B230 = {
+		1E682C532057686800F1C5F2 = {
 			isa = PBXGroup;
 			children = (
-				1E83E4372050E0D30092B230 /* 03-AVFoundation-AudioRecode-OC */,
-				1E83E4362050E0D30092B230 /* Products */,
+				1E682C5E2057686800F1C5F2 /* 03-AVFoundation-AudioRecord-Swift */,
+				1E682C5D2057686800F1C5F2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1E83E4362050E0D30092B230 /* Products */ = {
+		1E682C5D2057686800F1C5F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1E83E4352050E0D30092B230 /* 03-AVFoundation-AudioRecode-OC.app */,
+				1E682C5C2057686800F1C5F2 /* 03-AVFoundation-AudioRecord-Swift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1E83E4372050E0D30092B230 /* 03-AVFoundation-AudioRecode-OC */ = {
+		1E682C5E2057686800F1C5F2 /* 03-AVFoundation-AudioRecord-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				1E83E4382050E0D30092B230 /* AppDelegate.h */,
-				1E83E4392050E0D30092B230 /* AppDelegate.m */,
-				1E83E43B2050E0D30092B230 /* ViewController.h */,
-				1E83E43C2050E0D30092B230 /* ViewController.m */,
-				1E83E43E2050E0D30092B230 /* Main.storyboard */,
-				1E83E4412050E0D30092B230 /* Assets.xcassets */,
-				1E83E4432050E0D30092B230 /* LaunchScreen.storyboard */,
-				1E83E4462050E0D30092B230 /* Info.plist */,
-				1E83E4472050E0D30092B230 /* main.m */,
+				1E682C5F2057686800F1C5F2 /* AppDelegate.swift */,
+				1E682C612057686800F1C5F2 /* ViewController.swift */,
+				1E682C632057686800F1C5F2 /* Main.storyboard */,
+				1E682C662057686800F1C5F2 /* Assets.xcassets */,
+				1E682C682057686800F1C5F2 /* LaunchScreen.storyboard */,
+				1E682C6B2057686800F1C5F2 /* Info.plist */,
 			);
-			path = "03-AVFoundation-AudioRecode-OC";
+			path = "03-AVFoundation-AudioRecord-Swift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1E83E4342050E0D30092B230 /* 03-AVFoundation-AudioRecode-OC */ = {
+		1E682C5B2057686800F1C5F2 /* 03-AVFoundation-AudioRecord-Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1E83E44B2050E0D30092B230 /* Build configuration list for PBXNativeTarget "03-AVFoundation-AudioRecode-OC" */;
+			buildConfigurationList = 1E682C6E2057686800F1C5F2 /* Build configuration list for PBXNativeTarget "03-AVFoundation-AudioRecord-Swift" */;
 			buildPhases = (
-				1E83E4312050E0D30092B230 /* Sources */,
-				1E83E4322050E0D30092B230 /* Frameworks */,
-				1E83E4332050E0D30092B230 /* Resources */,
+				1E682C582057686800F1C5F2 /* Sources */,
+				1E682C592057686800F1C5F2 /* Frameworks */,
+				1E682C5A2057686800F1C5F2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "03-AVFoundation-AudioRecode-OC";
-			productName = "03-AVFoundation-AudioRecode-OC";
-			productReference = 1E83E4352050E0D30092B230 /* 03-AVFoundation-AudioRecode-OC.app */;
+			name = "03-AVFoundation-AudioRecord-Swift";
+			productName = "03-AVFoundation-AudioRecord-Swift";
+			productReference = 1E682C5C2057686800F1C5F2 /* 03-AVFoundation-AudioRecord-Swift.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1E83E42D2050E0D30092B230 /* Project object */ = {
+		1E682C542057686800F1C5F2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Frank.Zhang;
 				TargetAttributes = {
-					1E83E4342050E0D30092B230 = {
+					1E682C5B2057686800F1C5F2 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 1E83E4302050E0D30092B230 /* Build configuration list for PBXProject "03-AVFoundation-AudioRecode-OC" */;
+			buildConfigurationList = 1E682C572057686800F1C5F2 /* Build configuration list for PBXProject "03-AVFoundation-AudioRecord-Swift" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,55 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 1E83E42C2050E0D30092B230;
-			productRefGroup = 1E83E4362050E0D30092B230 /* Products */;
+			mainGroup = 1E682C532057686800F1C5F2;
+			productRefGroup = 1E682C5D2057686800F1C5F2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1E83E4342050E0D30092B230 /* 03-AVFoundation-AudioRecode-OC */,
+				1E682C5B2057686800F1C5F2 /* 03-AVFoundation-AudioRecord-Swift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1E83E4332050E0D30092B230 /* Resources */ = {
+		1E682C5A2057686800F1C5F2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E83E4452050E0D30092B230 /* LaunchScreen.storyboard in Resources */,
-				1E83E4422050E0D30092B230 /* Assets.xcassets in Resources */,
-				1E83E4402050E0D30092B230 /* Main.storyboard in Resources */,
+				1E682C6A2057686800F1C5F2 /* LaunchScreen.storyboard in Resources */,
+				1E682C672057686800F1C5F2 /* Assets.xcassets in Resources */,
+				1E682C652057686800F1C5F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1E83E4312050E0D30092B230 /* Sources */ = {
+		1E682C582057686800F1C5F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E83E43D2050E0D30092B230 /* ViewController.m in Sources */,
-				1E83E4482050E0D30092B230 /* main.m in Sources */,
-				1E83E43A2050E0D30092B230 /* AppDelegate.m in Sources */,
+				1E682C622057686800F1C5F2 /* ViewController.swift in Sources */,
+				1E682C602057686800F1C5F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1E83E43E2050E0D30092B230 /* Main.storyboard */ = {
+		1E682C632057686800F1C5F2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1E83E43F2050E0D30092B230 /* Base */,
+				1E682C642057686800F1C5F2 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1E83E4432050E0D30092B230 /* LaunchScreen.storyboard */ = {
+		1E682C682057686800F1C5F2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1E83E4442050E0D30092B230 /* Base */,
+				1E682C692057686800F1C5F2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1E83E4492050E0D30092B230 /* Debug */ = {
+		1E682C6C2057686800F1C5F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -222,10 +215,12 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		1E83E44A2050E0D30092B230 /* Release */ = {
+		1E682C6D2057686800F1C5F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -270,34 +265,37 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		1E83E44C2050E0D30092B230 /* Debug */ = {
+		1E682C6F2057686800F1C5F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BWWY5VW6C;
-				INFOPLIST_FILE = "03-AVFoundation-AudioRecode-OC/Info.plist";
+				INFOPLIST_FILE = "03-AVFoundation-AudioRecord-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Frank.Zhang.-3-AVFoundation-AudioRecode-OC";
+				PRODUCT_BUNDLE_IDENTIFIER = "Frank.Zhang.-3-AVFoundation-AudioRecord-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1E83E44D2050E0D30092B230 /* Release */ = {
+		1E682C702057686800F1C5F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6BWWY5VW6C;
-				INFOPLIST_FILE = "03-AVFoundation-AudioRecode-OC/Info.plist";
+				INFOPLIST_FILE = "03-AVFoundation-AudioRecord-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Frank.Zhang.-3-AVFoundation-AudioRecode-OC";
+				PRODUCT_BUNDLE_IDENTIFIER = "Frank.Zhang.-3-AVFoundation-AudioRecord-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -305,25 +303,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1E83E4302050E0D30092B230 /* Build configuration list for PBXProject "03-AVFoundation-AudioRecode-OC" */ = {
+		1E682C572057686800F1C5F2 /* Build configuration list for PBXProject "03-AVFoundation-AudioRecord-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1E83E4492050E0D30092B230 /* Debug */,
-				1E83E44A2050E0D30092B230 /* Release */,
+				1E682C6C2057686800F1C5F2 /* Debug */,
+				1E682C6D2057686800F1C5F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1E83E44B2050E0D30092B230 /* Build configuration list for PBXNativeTarget "03-AVFoundation-AudioRecode-OC" */ = {
+		1E682C6E2057686800F1C5F2 /* Build configuration list for PBXNativeTarget "03-AVFoundation-AudioRecord-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1E83E44C2050E0D30092B230 /* Debug */,
-				1E83E44D2050E0D30092B230 /* Release */,
+				1E682C6F2057686800F1C5F2 /* Debug */,
+				1E682C702057686800F1C5F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1E83E42D2050E0D30092B230 /* Project object */;
+	rootObject = 1E682C542057686800F1C5F2 /* Project object */;
 }

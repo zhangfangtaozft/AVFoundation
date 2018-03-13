@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  03-AVFoundation-AudioRecode-OC
+//  03-AVFoundation-AudioRecord-OC
 //
-//  Created by frank.Zhang on 08/03/2018.
+//  Created by frank.Zhang on 13/03/2018.
 //  Copyright © 2018 Frank.Zhang. All rights reserved.
 //
 
@@ -12,10 +12,8 @@
 @property (weak, nonatomic) IBOutlet UIView *bgView;
 @property (weak, nonatomic) IBOutlet UIView *progressView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightValue;
-
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *msgLabel;
-
 @property (nonatomic, strong) NSURL *fileUrl;
 @property (nonatomic, strong) NSTimer *timer;
 @property (nonatomic, strong) AVAudioSession *session;
@@ -24,7 +22,6 @@
 @end
 
 @implementation ViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initUI];
@@ -94,9 +91,9 @@
     [self.recorder updateMeters];
     float passValue = [self.recorder peakPowerForChannel:0]/110.0 >1 ? 1: [self.recorder peakPowerForChannel:0]/110.0;
     self.heightValue.constant =  passValue * self.bgView.frame.size.height;
-     int hourValue = self.recorder.currentTime/3600;
-     int minValue = (self.recorder.currentTime - hourValue* 3600)/60;
-     int secValue = self.recorder.currentTime - hourValue* 3600 - minValue * 60;
+    int hourValue = self.recorder.currentTime/3600;
+    int minValue = (self.recorder.currentTime - hourValue* 3600)/60;
+    int secValue = self.recorder.currentTime - hourValue* 3600 - minValue * 60;
     self.timeLabel.text = [NSString stringWithFormat:@"%02d:%02d:%02d",hourValue,minValue,secValue];
 }
 
@@ -129,6 +126,25 @@
     }
 }
 
+- (IBAction)playAction:(id)sender {
+    [self playRecordFile];
+}
+
+- (IBAction)dragExitAction:(id)sender {
+    self.heightValue.constant = 0.0;
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [self stopRecord];
+        [self clearFile];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.msgLabel.text = @"录音已经被取消";
+        });
+    });
+}
+
+- (IBAction)redordButtonTouchDownAction:(id)sender {
+    self.msgLabel.text = @"正在录音中。。。";
+    [self startRecord];
+}
 
 - (IBAction)recordAction:(id)sender {
     double currentTime = self.recorder.currentTime;
@@ -150,29 +166,10 @@
     }
 }
 
-- (IBAction)playAction:(id)sender {
-    [self playRecordFile];
-}
-- (IBAction)dragExitAction:(id)sender {
-    self.heightValue.constant = 0.0;
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        [self stopRecord];
-        [self clearFile];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            self.msgLabel.text = @"录音已经被取消";
-        });
-    });
-}
-
-- (IBAction)redordButtonTouchDownAction:(id)sender {
-    self.msgLabel.text = @"正在录音中。。。";
-    [self startRecord];
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-
 @end
+
