@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F82A70B521C8A48000C25C57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A70B421C8A48000C25C57 /* AppDelegate.m */; };
+		F82A70B821C8A48000C25C57 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A70B721C8A48000C25C57 /* ViewController.m */; };
+		F82A70BA21C8A48100C25C57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F82A70B921C8A48100C25C57 /* Assets.xcassets */; };
+		F82A70C021C8A48100C25C57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A70BF21C8A48100C25C57 /* main.m */; };
+		F82A70CD21C8A56800C25C57 /* DefaultMetadataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A70CC21C8A56800C25C57 /* DefaultMetadataConverter.m */; };
+		F82A70D021C8A5D100C25C57 /* MetadataConverterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A70CF21C8A5D100C25C57 /* MetadataConverterFactory.m */; };
+		F82A70D321C8A64600C25C57 /* ArtworkMetadataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A70D221C8A64600C25C57 /* ArtworkMetadataConverter.m */; };
+		F82A70D621C8A69900C25C57 /* CommentMetadataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A70D521C8A69800C25C57 /* CommentMetadataConverter.m */; };
+		F82A70D921C8A6E700C25C57 /* TrackMetadataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A70D821C8A6E700C25C57 /* TrackMetadataConverter.m */; };
+		F82A70DC21C8A76800C25C57 /* MetadataKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A70DB21C8A76800C25C57 /* MetadataKeys.m */; };
+		F82A70DF21C8A7A600C25C57 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82A70DE21C8A7A600C25C57 /* AVFoundation.framework */; };
+		F82A70E121C8A7AE00C25C57 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82A70E021C8A7AD00C25C57 /* Cocoa.framework */; };
+		F82A70E421C8A86000C25C57 /* DiscMetadataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A70E321C8A86000C25C57 /* DiscMetadataConverter.m */; };
+		F82A70E921C8A8FA00C25C57 /* GenreMetadataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A70E821C8A8FA00C25C57 /* GenreMetadataConverter.m */; };
+		F82A70EB21C8BFC000C25C57 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82A70EA21C8BFC000C25C57 /* AppKit.framework */; };
+		F82A70EE21C8C13800C25C57 /* AVMetadataItem+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A70ED21C8C13800C25C57 /* AVMetadataItem+Additions.m */; };
+		F82A70F121C8C18700C25C57 /* Genre.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A70F021C8C18700C25C57 /* Genre.m */; };
+		F82A70F421C8C30800C25C57 /* Metadata.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A70F321C8C30800C25C57 /* Metadata.m */; };
+		F82A70F721C8C4C500C25C57 /* MediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A70F621C8C4C500C25C57 /* MediaItem.m */; };
+		F82A710B21C8C73400C25C57 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F82A710A21C8C73400C25C57 /* MainMenu.xib */; };
+		F82A710D21C8C98400C25C57 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F82A710C21C8C98400C25C57 /* MainWindow.xib */; };
+		F82A711621C8CC9800C25C57 /* NumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A711521C8CC9800C25C57 /* NumberFormatter.m */; };
+		F82A711921C8CF0200C25C57 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A711821C8CF0200C25C57 /* MainWindowController.m */; };
+		F82A711C21C8D4D700C25C57 /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = F82A711A21C8D4D700C25C57 /* NSFileManager+DirectoryLocations.m */; };
+		F82A712221C8DBE400C25C57 /* Media in Resources */ = {isa = PBXBuildFile; fileRef = F82A712121C8DBE400C25C57 /* Media */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F82A70B021C8A48000C25C57 /* 04-MetaManager-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "04-MetaManager-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82A70B321C8A48000C25C57 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F82A70B421C8A48000C25C57 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F82A70B621C8A48000C25C57 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F82A70B721C8A48000C25C57 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F82A70B921C8A48100C25C57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F82A70BE21C8A48100C25C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82A70BF21C8A48100C25C57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F82A70C121C8A48100C25C57 /* _4_MetaManager_OC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _4_MetaManager_OC.entitlements; sourceTree = "<group>"; };
+		F82A70CA21C8A50100C25C57 /* MetadataConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetadataConverter.h; sourceTree = "<group>"; };
+		F82A70CB21C8A56800C25C57 /* DefaultMetadataConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultMetadataConverter.h; sourceTree = "<group>"; };
+		F82A70CC21C8A56800C25C57 /* DefaultMetadataConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultMetadataConverter.m; sourceTree = "<group>"; };
+		F82A70CE21C8A5D100C25C57 /* MetadataConverterFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetadataConverterFactory.h; sourceTree = "<group>"; };
+		F82A70CF21C8A5D100C25C57 /* MetadataConverterFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetadataConverterFactory.m; sourceTree = "<group>"; };
+		F82A70D121C8A64600C25C57 /* ArtworkMetadataConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtworkMetadataConverter.h; sourceTree = "<group>"; };
+		F82A70D221C8A64600C25C57 /* ArtworkMetadataConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtworkMetadataConverter.m; sourceTree = "<group>"; };
+		F82A70D421C8A69800C25C57 /* CommentMetadataConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentMetadataConverter.h; sourceTree = "<group>"; };
+		F82A70D521C8A69800C25C57 /* CommentMetadataConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentMetadataConverter.m; sourceTree = "<group>"; };
+		F82A70D721C8A6E700C25C57 /* TrackMetadataConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackMetadataConverter.h; sourceTree = "<group>"; };
+		F82A70D821C8A6E700C25C57 /* TrackMetadataConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackMetadataConverter.m; sourceTree = "<group>"; };
+		F82A70DA21C8A76800C25C57 /* MetadataKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetadataKeys.h; sourceTree = "<group>"; };
+		F82A70DB21C8A76800C25C57 /* MetadataKeys.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetadataKeys.m; sourceTree = "<group>"; };
+		F82A70DE21C8A7A600C25C57 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F82A70E021C8A7AD00C25C57 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F82A70E221C8A86000C25C57 /* DiscMetadataConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscMetadataConverter.h; sourceTree = "<group>"; };
+		F82A70E321C8A86000C25C57 /* DiscMetadataConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscMetadataConverter.m; sourceTree = "<group>"; };
+		F82A70E721C8A8FA00C25C57 /* GenreMetadataConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenreMetadataConverter.h; sourceTree = "<group>"; };
+		F82A70E821C8A8FA00C25C57 /* GenreMetadataConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenreMetadataConverter.m; sourceTree = "<group>"; };
+		F82A70EA21C8BFC000C25C57 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F82A70EC21C8C13800C25C57 /* AVMetadataItem+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVMetadataItem+Additions.h"; sourceTree = "<group>"; };
+		F82A70ED21C8C13800C25C57 /* AVMetadataItem+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AVMetadataItem+Additions.m"; sourceTree = "<group>"; };
+		F82A70EF21C8C18700C25C57 /* Genre.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Genre.h; sourceTree = "<group>"; };
+		F82A70F021C8C18700C25C57 /* Genre.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Genre.m; sourceTree = "<group>"; };
+		F82A70F221C8C30800C25C57 /* Metadata.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Metadata.h; sourceTree = "<group>"; };
+		F82A70F321C8C30800C25C57 /* Metadata.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Metadata.m; sourceTree = "<group>"; };
+		F82A70F521C8C4C500C25C57 /* MediaItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaItem.h; sourceTree = "<group>"; };
+		F82A70F621C8C4C500C25C57 /* MediaItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaItem.m; sourceTree = "<group>"; };
+		F82A710A21C8C73400C25C57 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		F82A710C21C8C98400C25C57 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		F82A711421C8CC9800C25C57 /* NumberFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberFormatter.h; sourceTree = "<group>"; };
+		F82A711521C8CC9800C25C57 /* NumberFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberFormatter.m; sourceTree = "<group>"; };
+		F82A711721C8CF0200C25C57 /* MainWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		F82A711821C8CF0200C25C57 /* MainWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		F82A711A21C8D4D700C25C57 /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
+		F82A711B21C8D4D700C25C57 /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
+		F82A712121C8DBE400C25C57 /* Media */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Media; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F82A70AD21C8A48000C25C57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82A70EB21C8BFC000C25C57 /* AppKit.framework in Frameworks */,
+				F82A70E121C8A7AE00C25C57 /* Cocoa.framework in Frameworks */,
+				F82A70DF21C8A7A600C25C57 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F82A70A721C8A48000C25C57 = {
+			isa = PBXGroup;
+			children = (
+				F82A70B221C8A48000C25C57 /* 04-MetaManager-OC */,
+				F82A70B121C8A48000C25C57 /* Products */,
+				F82A70DD21C8A7A500C25C57 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F82A70B121C8A48000C25C57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F82A70B021C8A48000C25C57 /* 04-MetaManager-OC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F82A70B221C8A48000C25C57 /* 04-MetaManager-OC */ = {
+			isa = PBXGroup;
+			children = (
+				F82A712021C8DB9900C25C57 /* Supporting Files */,
+				F82A710A21C8C73400C25C57 /* MainMenu.xib */,
+				F82A70B321C8A48000C25C57 /* AppDelegate.h */,
+				F82A70B421C8A48000C25C57 /* AppDelegate.m */,
+				F82A70B621C8A48000C25C57 /* ViewController.h */,
+				F82A70B721C8A48000C25C57 /* ViewController.m */,
+				F82A711721C8CF0200C25C57 /* MainWindowController.h */,
+				F82A711821C8CF0200C25C57 /* MainWindowController.m */,
+				F82A711421C8CC9800C25C57 /* NumberFormatter.h */,
+				F82A711521C8CC9800C25C57 /* NumberFormatter.m */,
+				F82A711B21C8D4D700C25C57 /* NSFileManager+DirectoryLocations.h */,
+				F82A711A21C8D4D700C25C57 /* NSFileManager+DirectoryLocations.m */,
+				F82A710C21C8C98400C25C57 /* MainWindow.xib */,
+				F82A70C721C8A4AF00C25C57 /* Metadata */,
+				F82A70B921C8A48100C25C57 /* Assets.xcassets */,
+				F82A70BE21C8A48100C25C57 /* Info.plist */,
+				F82A70BF21C8A48100C25C57 /* main.m */,
+				F82A70C121C8A48100C25C57 /* _4_MetaManager_OC.entitlements */,
+			);
+			path = "04-MetaManager-OC";
+			sourceTree = "<group>";
+		};
+		F82A70C721C8A4AF00C25C57 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				F82A70C821C8A4B900C25C57 /* Converters */,
+				F82A70DA21C8A76800C25C57 /* MetadataKeys.h */,
+				F82A70DB21C8A76800C25C57 /* MetadataKeys.m */,
+				F82A70EC21C8C13800C25C57 /* AVMetadataItem+Additions.h */,
+				F82A70ED21C8C13800C25C57 /* AVMetadataItem+Additions.m */,
+				F82A70EF21C8C18700C25C57 /* Genre.h */,
+				F82A70F021C8C18700C25C57 /* Genre.m */,
+				F82A70F221C8C30800C25C57 /* Metadata.h */,
+				F82A70F321C8C30800C25C57 /* Metadata.m */,
+				F82A70F521C8C4C500C25C57 /* MediaItem.h */,
+				F82A70F621C8C4C500C25C57 /* MediaItem.m */,
+			);
+			path = Metadata;
+			sourceTree = "<group>";
+		};
+		F82A70C821C8A4B900C25C57 /* Converters */ = {
+			isa = PBXGroup;
+			children = (
+				F82A70CA21C8A50100C25C57 /* MetadataConverter.h */,
+				F82A70CB21C8A56800C25C57 /* DefaultMetadataConverter.h */,
+				F82A70CC21C8A56800C25C57 /* DefaultMetadataConverter.m */,
+				F82A70CE21C8A5D100C25C57 /* MetadataConverterFactory.h */,
+				F82A70CF21C8A5D100C25C57 /* MetadataConverterFactory.m */,
+				F82A70D121C8A64600C25C57 /* ArtworkMetadataConverter.h */,
+				F82A70D221C8A64600C25C57 /* ArtworkMetadataConverter.m */,
+				F82A70D421C8A69800C25C57 /* CommentMetadataConverter.h */,
+				F82A70D521C8A69800C25C57 /* CommentMetadataConverter.m */,
+				F82A70D721C8A6E700C25C57 /* TrackMetadataConverter.h */,
+				F82A70D821C8A6E700C25C57 /* TrackMetadataConverter.m */,
+				F82A70E221C8A86000C25C57 /* DiscMetadataConverter.h */,
+				F82A70E321C8A86000C25C57 /* DiscMetadataConverter.m */,
+				F82A70E721C8A8FA00C25C57 /* GenreMetadataConverter.h */,
+				F82A70E821C8A8FA00C25C57 /* GenreMetadataConverter.m */,
+			);
+			path = Converters;
+			sourceTree = "<group>";
+		};
+		F82A70DD21C8A7A500C25C57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F82A70EA21C8BFC000C25C57 /* AppKit.framework */,
+				F82A70E021C8A7AD00C25C57 /* Cocoa.framework */,
+				F82A70DE21C8A7A600C25C57 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F82A712021C8DB9900C25C57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F82A712121C8DBE400C25C57 /* Media */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F82A70AF21C8A48000C25C57 /* 04-MetaManager-OC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F82A70C421C8A48100C25C57 /* Build configuration list for PBXNativeTarget "04-MetaManager-OC" */;
+			buildPhases = (
+				F82A70AC21C8A48000C25C57 /* Sources */,
+				F82A70AD21C8A48000C25C57 /* Frameworks */,
+				F82A70AE21C8A48000C25C57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "04-MetaManager-OC";
+			productName = "04-MetaManager-OC";
+			productReference = F82A70B021C8A48000C25C57 /* 04-MetaManager-OC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F82A70A821C8A48000C25C57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Frank.zhang;
+				TargetAttributes = {
+					F82A70AF21C8A48000C25C57 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = F82A70AB21C8A48000C25C57 /* Build configuration list for PBXProject "04-MetaManager-OC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F82A70A721C8A48000C25C57;
+			productRefGroup = F82A70B121C8A48000C25C57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F82A70AF21C8A48000C25C57 /* 04-MetaManager-OC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F82A70AE21C8A48000C25C57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82A70BA21C8A48100C25C57 /* Assets.xcassets in Resources */,
+				F82A712221C8DBE400C25C57 /* Media in Resources */,
+				F82A710D21C8C98400C25C57 /* MainWindow.xib in Resources */,
+				F82A710B21C8C73400C25C57 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F82A70AC21C8A48000C25C57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82A711621C8CC9800C25C57 /* NumberFormatter.m in Sources */,
+				F82A70D621C8A69900C25C57 /* CommentMetadataConverter.m in Sources */,
+				F82A70D921C8A6E700C25C57 /* TrackMetadataConverter.m in Sources */,
+				F82A70F421C8C30800C25C57 /* Metadata.m in Sources */,
+				F82A70EE21C8C13800C25C57 /* AVMetadataItem+Additions.m in Sources */,
+				F82A70DC21C8A76800C25C57 /* MetadataKeys.m in Sources */,
+				F82A711921C8CF0200C25C57 /* MainWindowController.m in Sources */,
+				F82A70B821C8A48000C25C57 /* ViewController.m in Sources */,
+				F82A70E421C8A86000C25C57 /* DiscMetadataConverter.m in Sources */,
+				F82A70E921C8A8FA00C25C57 /* GenreMetadataConverter.m in Sources */,
+				F82A70C021C8A48100C25C57 /* main.m in Sources */,
+				F82A711C21C8D4D700C25C57 /* NSFileManager+DirectoryLocations.m in Sources */,
+				F82A70D321C8A64600C25C57 /* ArtworkMetadataConverter.m in Sources */,
+				F82A70B521C8A48000C25C57 /* AppDelegate.m in Sources */,
+				F82A70F721C8C4C500C25C57 /* MediaItem.m in Sources */,
+				F82A70CD21C8A56800C25C57 /* DefaultMetadataConverter.m in Sources */,
+				F82A70D021C8A5D100C25C57 /* MetadataConverterFactory.m in Sources */,
+				F82A70F121C8C18700C25C57 /* Genre.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F82A70C221C8A48100C25C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F82A70C321C8A48100C25C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F82A70C521C8A48100C25C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "04-MetaManager-OC/_4_MetaManager_OC.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6BWWY5VW6C;
+				INFOPLIST_FILE = "04-MetaManager-OC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Neulion.-4-MetaManager-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F82A70C621C8A48100C25C57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "04-MetaManager-OC/_4_MetaManager_OC.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6BWWY5VW6C;
+				INFOPLIST_FILE = "04-MetaManager-OC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Neulion.-4-MetaManager-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F82A70AB21C8A48000C25C57 /* Build configuration list for PBXProject "04-MetaManager-OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82A70C221C8A48100C25C57 /* Debug */,
+				F82A70C321C8A48100C25C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F82A70C421C8A48100C25C57 /* Build configuration list for PBXNativeTarget "04-MetaManager-OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82A70C521C8A48100C25C57 /* Debug */,
+				F82A70C621C8A48100C25C57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F82A70A821C8A48000C25C57 /* Project object */;
+}
