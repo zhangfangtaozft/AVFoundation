@@ -1,0 +1,22 @@
+//
+//  VideoPlayer-Prefix.pch
+//  05-AVFoundation-AVPlayer-OC
+//
+//  Created by frank.zhang on 2018/12/19.
+//  Copyright © 2018 Frank.zhang. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#define ENABLE_SUBTITLES 0
+#define ENABLE_AIRPLAY 0
+
+#endif
