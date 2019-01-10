@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Camera View" customClass="CameraView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qzt-uy-bKM" customClass="PreviewView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KfG-D8-CRP" userLabel="Controls View" customClass="OverlayView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bf7-HO-OVn" userLabel="Mode View" customClass="CameraModeView">
+                                        <rect key="frame" x="-20" y="537" width="395" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="552-c6-be6" userLabel="Capture" customClass="CaptureButton">
+                                                <rect key="frame" x="163.5" y="34" width="68" height="68"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="68" id="6d0-4q-13I"/>
+                                                    <constraint firstAttribute="height" constant="68" id="vhG-Pk-HGK"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="captureOrRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9p7-TB-Dr8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JB7-KP-n3C" userLabel="Thumbnail">
+                                                <rect key="frame" x="40" y="45" width="46" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="JB7-KP-n3C" secondAttribute="height" multiplier="46:45" id="A0g-UG-io1"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="showCameraRoll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YKt-Kr-g5i"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="JB7-KP-n3C" firstAttribute="leading" secondItem="bf7-HO-OVn" secondAttribute="leading" constant="40" id="0wg-8I-lxT"/>
+                                            <constraint firstAttribute="bottom" secondItem="JB7-KP-n3C" secondAttribute="bottom" constant="20" id="1Tn-wY-Zzr"/>
+                                            <constraint firstAttribute="height" constant="110" id="E9S-rb-YFD"/>
+                                            <constraint firstItem="JB7-KP-n3C" firstAttribute="top" secondItem="bf7-HO-OVn" secondAttribute="top" constant="45" id="Hm6-FB-55h"/>
+                                            <constraint firstItem="552-c6-be6" firstAttribute="centerX" secondItem="bf7-HO-OVn" secondAttribute="centerX" id="T4C-3j-xQf"/>
+                                            <constraint firstAttribute="bottom" secondItem="552-c6-be6" secondAttribute="bottom" constant="8" id="rUR-iQ-nfS"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="cameraModeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="FuK-at-o14"/>
+                                            <outlet property="captureButton" destination="552-c6-be6" id="tb8-fF-ywH"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YwO-ge-YQo" userLabel="Status View" customClass="StatusView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJA-Db-ODO" customClass="FlashControl">
+                                                <rect key="frame" x="16" y="0.0" width="48" height="48"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="eJA-Db-ODO" secondAttribute="height" multiplier="1:1" id="2xZ-OJ-2yV"/>
+                                                </constraints>
+                                                <connections>
+                                                    <action selector="flashControlChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="T08-5j-g1Q"/>
+                                                </connections>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RZ-zD-kuC">
+                                                <rect key="frame" x="146.5" y="11" width="82" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="RLc-8y-Nt2"/>
+                                                    <constraint firstAttribute="width" constant="82" id="WJw-7I-wa7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8q-Wi-bSl">
+                                                <rect key="frame" x="319" y="0.0" width="56" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="V8q-Wi-bSl" secondAttribute="height" multiplier="56:48" id="cnm-EG-jnY"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="camera_icon"/>
+                                                <connections>
+                                                    <action selector="swapCameras:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aYy-6y-foe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="eJA-Db-ODO" firstAttribute="leading" secondItem="YwO-ge-YQo" secondAttribute="leading" constant="16" id="1no-lS-9MW"/>
+                                            <constraint firstAttribute="height" constant="48" id="MEi-i9-Q3r"/>
+                                            <constraint firstItem="1RZ-zD-kuC" firstAttribute="centerY" secondItem="YwO-ge-YQo" secondAttribute="centerY" id="SF9-aa-KeI"/>
+                                            <constraint firstItem="1RZ-zD-kuC" firstAttribute="centerX" secondItem="YwO-ge-YQo" secondAttribute="centerX" id="Seb-vi-VBe"/>
+                                            <constraint firstItem="V8q-Wi-bSl" firstAttribute="top" secondItem="YwO-ge-YQo" secondAttribute="top" id="T6N-zs-DRc"/>
+                                            <constraint firstAttribute="bottom" secondItem="V8q-Wi-bSl" secondAttribute="bottom" id="TVm-Lo-nTa"/>
+                                            <constraint firstAttribute="trailing" secondItem="V8q-Wi-bSl" secondAttribute="trailing" id="Ttv-ln-YqS"/>
+                                            <constraint firstAttribute="bottom" secondItem="eJA-Db-ODO" secondAttribute="bottom" id="qQH-sU-8mX"/>
+                                            <constraint firstItem="eJA-Db-ODO" firstAttribute="top" secondItem="YwO-ge-YQo" secondAttribute="top" id="qn1-4z-MM4"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="elapsedTimeLabel" destination="1RZ-zD-kuC" id="qk0-sw-do2"/>
+                                            <outlet property="flashControl" destination="eJA-Db-ODO" id="w3m-VS-ihD"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bf7-HO-OVn" secondAttribute="bottom" id="HOV-Nq-uiW"/>
+                                    <constraint firstItem="YwO-ge-YQo" firstAttribute="top" secondItem="KfG-D8-CRP" secondAttribute="top" id="N6J-dt-qZD"/>
+                                    <constraint firstAttribute="trailing" secondItem="YwO-ge-YQo" secondAttribute="trailing" id="WYJ-V1-Rua"/>
+                                    <constraint firstAttribute="trailing" secondItem="bf7-HO-OVn" secondAttribute="trailing" id="dk0-To-jk5"/>
+                                    <constraint firstItem="YwO-ge-YQo" firstAttribute="leading" secondItem="KfG-D8-CRP" secondAttribute="leading" id="x3L-2Z-XLb"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="modeView" destination="bf7-HO-OVn" id="tO9-cL-iZv"/>
+                                    <outlet property="statusView" destination="YwO-ge-YQo" id="xJ2-eQ-xoS"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KfG-D8-CRP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6Pw-1H-c5y"/>
+                            <constraint firstItem="qzt-uy-bKM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="7MW-qv-TAQ"/>
+                            <constraint firstItem="KfG-D8-CRP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="H3z-eY-8Ac"/>
+                            <constraint firstItem="bf7-HO-OVn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-20" id="HWM-kA-VzW"/>
+                            <constraint firstAttribute="trailing" secondItem="qzt-uy-bKM" secondAttribute="trailing" id="PCg-Ou-MRq"/>
+                            <constraint firstAttribute="trailing" secondItem="KfG-D8-CRP" secondAttribute="trailing" id="UFA-Qc-tNx"/>
+                            <constraint firstItem="qzt-uy-bKM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="VXA-aQ-nlR"/>
+                            <constraint firstItem="KfG-D8-CRP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="kUy-xF-MGg"/>
+                            <constraint firstItem="qzt-uy-bKM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pP5-2d-jad"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outlet property="controlsView" destination="KfG-D8-CRP" id="LVz-cB-LOw"/>
+                            <outlet property="previewView" destination="qzt-uy-bKM" id="CeW-0m-l8p"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="overlayView" destination="KfG-D8-CRP" id="Ibg-ir-XCe"/>
+                        <outlet property="previewView" destination="qzt-uy-bKM" id="MYV-wC-hhq"/>
+                        <outlet property="thumbnailButton" destination="JB7-KP-n3C" id="NgT-ps-m0w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera_icon" width="28" height="21"/>
+    </resources>
+</document>
